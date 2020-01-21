@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class PolyTest {
-	Poly obj = new Poly(new int[][]{{2,1},{2,2},{2,0}});
+public class PolyTest1 {
+	Poly1 obj = new Poly1(new int[][]{{2,1},{2,2},{2,0}});
 
 	@Test
 	public void when_onefloat_passed() {
@@ -24,18 +24,18 @@ public class PolyTest {
 	
 	@Test
 	public void when_two_oject_passed() {
-		assertEquals( true, obj.addPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
+		assertEquals( true, obj.addPoly( new Poly1(new int[][]{{2,1},{2,2},{2,4}}), new Poly1(new int[][]{{2,1},{2,1}})) );
 	}
 	
 	@Test
 	public void when_two_oject_passed1() {
-		assertEquals( true, obj.multiplyPoly( new Poly(new int[][]{{2,1},{2,2},{2,4}}), new Poly(new int[][]{{2,1},{2,1}})) );
+		assertEquals( true, obj.multiplyPoly( new Poly1(new int[][]{{2,1},{2,2},{2,4}}), new Poly1(new int[][]{{2,1},{2,1}})) );
 	}
 	
 	@Test
 	public void when_negative_number_ispassed() {
 	try {
-		assertEquals("size of array is size is zero",1, new Poly(new int[][]{}));
+		assertEquals("size of array is size is zero",1, new Poly1(new int[][]{}));
 	}
 	catch (AssertionError e) {
 		System.out.println("size of array is zero");

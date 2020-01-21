@@ -1,18 +1,27 @@
 package scf6;
 
-public class Poly {
+public class Poly1 {
 	private final int polyArray[][];
 	
-	Poly(int[][] arr){
+	Poly1(int[][] arr){
 		if ( arr.length == 0 )
 			throw new AssertionError();
 		polyArray = arr.clone();
 	}
 	
+	/**
+	 * get the instance variable of object i.e. polyArray
+	 * @return polyArray
+	 */
 	public int[][] getPolyArray() {
 		return polyArray.clone();
 	}
-
+	
+	/**
+	 * find sorting of array in descending order
+	 * @param arr as a array of int type
+	 * @return arr as sorted array
+	 */
 	private int[][] sorting(int[][] arr){
 		int swapDegree, swapCoff, len=arr.length;
 		for ( int i=0; i<len-1; i++ )
@@ -28,6 +37,11 @@ public class Poly {
 		return arr;
 	}
 	
+	/**
+	 * find the evaluation of polynomial
+	 * @param num as a value for evaluation of float type
+	 * @return as a totalSum of int type
+	 */
 	public int evaluate(float num){
 		float totalSum=0;
 		for ( int i=0; i<polyArray.length; i++ )
@@ -35,12 +49,22 @@ public class Poly {
 		return (int)totalSum;
 	}
 	
+	/**
+	 * find out degree of ploynomial
+	 * @return arr[0][1] as a degree of polynomial
+	 */
 	public int degree(){
 		int[][] arr = sorting(this.polyArray);
 		return arr[0][1];
 	}
 	
-	public boolean addPoly(Poly obj1, Poly obj2){
+	/**
+	 * find additon of polynomial
+	 * @param obj1 as a object of Poly type
+	 * @param obj2 as a object of Poly type
+	 * @return true
+	 */
+	public boolean addPoly(Poly1 obj1, Poly1 obj2){
 		int arr1[][] = sorting(obj1.polyArray), i=0, j=0, k=0;
 		int[][] arr2 = sorting(obj2.polyArray);
 		int addArray[][] = new int[arr1.length+arr2.length][2];
@@ -77,8 +101,14 @@ public class Poly {
 			System.out.println("additon " +addArray[i][0]+addArray[i][1]);
 		return true;
 }
-
-	public boolean multiplyPoly(Poly obj1, Poly obj2){
+	
+	/**
+	 * find the multiply of polynomial
+	 * @param obj1 as a object of Poly type
+	 * @param obj2 as a object of Poly type
+	 * @return true
+	 */
+	public boolean multiplyPoly(Poly1 obj1, Poly1 obj2){
 		int arr1[][] = sorting(obj1.polyArray), coff=0, pow=0;
 		int[][] arr2 = sorting(obj2.polyArray);
 		int size = arr1[0][1]+arr2[0][1];
