@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="cssfile.css" />
+</head>
+<body>
+	<form id="registerformid" action="register" method="post">
+		<fieldset>
+			
+			<h1>Parking Registration Form</h1>
+			<input id="name" type="text" placeholder="Name" name="empname" required><br><br> 
+			<strong>Gender: </strong><label><input type="radio"
+			name="empgender" value="Male">Male</label> <label><input type="radio"
+			name="empgender" value="Female">Female</label><br><br>
+		    <input id="email" type="email" placeholder="email" name="empemail" required><br><br> 
+		    <input id="password" type="password" placeholder="password" name="emppassword"required><br> <br> 
+			<input id="confirmpassword" type="password" placeholder="Confirm Password" name="empconfirmpassword" required><br><br>
+		    <input id="contact" placeholder="contact number" type="text" name="empcontact" required><br>
+			<br> <select id=selectVehicleType name="emporganisation">
+				<option>Select Organisation Type</option>
+				<option value="Metacube">Metacube</option>
+				<option value="In time Tech">In time Tech</option>
+				<option value="Infosys">Infosys</option>
+				<option value="TCS">TCS</option>
+			</select> <br><br>
+			 <input type="submit" value="Submit"><br><br>
+			 <strong>If You Alredy Register </strong><a href="login.jsp"><input type="button" value="  Login  "></a>
+		</fieldset>
+	</form>
+</body>
+</html>
