@@ -1,7 +1,5 @@
 package EAD6.com.assignment;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
 public class BookDetail {
 	private int idbook;
 	private String title;
