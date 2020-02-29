@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cssfile.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#img" class="active">Home</a>
+        <a href="#onclickregisterform">Add Employee</a>
+        <a href="#onclickvehicleform">Add Vehicle</a>
+        <a href="#onclickfeedbackform">Give feedback</a>
+        <a href="#onclickplanform">Pricing</a>
+    </div>
+    <img id="img" src="10-fastest-cars-in-the-world-1.jpg" width="100%">
+
+    <div onclick="showregisterform()" id="onclickregisterform" class="form">
+        <h1>Parking Registration Form</h1>
+    </div>
+    <div>
+        <form id="registerformid" style="display: none">
+
+
+            <h1>Parking Registration Form</h1>
+            Employee Name <input id="name" type="text" placeholder="Enter Employee Name" required><br><br> Gender:
+            <label><input type="radio" name="gender">Male</label> <label><input type="radio" name="gender">Female</label><br><br> Employee Email<input id="email" type="email" placeholder="Enter Employee email" required><br><br> Employee Password
+            <input id="password" type="password" placeholder="Enter Employee password" required><br><br> Confirm Password<input id="confirmpassword" type="password" placeholder="Enter Confirm Password" required><br><br> Employee Contact<input id="contact"
+                placeholder="Enter contact number" type="text"><br><br>
+            <input type="button" value="Submit" onclick="checkValidation()">
+            <br><br>
+        </form>
+    </div>
+
+    <div onclick="showvehicleform()" id="onclickvehicleform" class="form">
+        <h1>Vehicle Registration Form</h1>
+    </div>
+
+    <div>
+        <form id="vehicleformid" style="display: none">
+
+            <h1>Vehicle Form</h1>
+            Vehicle Company <input id="vehiclecompany" type="text" placeholder="Enter Vehicle Company" required><br><br> Vehicle Model<input id="vehiclemodel" type="text" placeholder="Enter Vehicle Model" required><br><br> Vehicle Type<select id=selectVehicleType>
+                <option>Select Vehicle Type</option>
+                <option value="Bicycle">Bicycle</option>
+                <option value="Motorcycle">Motor Cycle</option>
+                <option value="Fourwheelers">Four Wheeler</option>
+                </select>
+            <br><br> Vehicle Number<input type="tel" placeholder="Enter Vehicle Number" required><br><br> Employee Id<input id="empId" type="number" placeholder="Enter Employee Id" required><br><br> Vehicle Description<textarea placeholder="Enter Description"></textarea><br><br>
+            <input type="button" value="Submit" onclick="vehicleData()">
+            <br><br>
+        </form>
+    </div>
+    <div onclick="feedbackform()" id="onclickfeedbackform" class="form">
+        <h1>Feedback Form</h1>
+    </div>
+    <form id="feedbackid" style="display: none">
+
+        <h1>Fedback Form</h1>
+        Employee Name<input id="name" type="text" placeholder="Enter Employee Name" required><br><br> Employee Email<input id="email" type="email" placeholder="Enter Employee email" required><br><br> Subject
+        <input id="subject" type="text" placeholder="Enter Subject" required><br><br> Message
+        <textarea placeholder="Enter Message"></textarea><br><br>
+        <input type="button" value="Send Mail" onclick="">
+        <br><br>
+
+    </form>
+    <div onclick="planform()" id="onclickplanform" class="form">
+        <h1>Vehicle Plan Form</h1>
+    </div>
+    <div>
+        <form id="planid" style="display: none">
+            <h1>Select your Plan:</h1>
+            <div class="text">Bicycle </div>
+            <div class="text">MotorCycle</div>
+            <div class="text">Four Wheeler</div><br><br>
+            <label><div class="circle">
+                <input type="radio" id="daily" name="plan">Daily<br><span  id = "dailyPriceRate"></span>
+            </div></label>
+
+            <label><div class="circle">
+                <input type="radio" id="monthly" name="plan">Monthly<br><span id = "monthlyPriceRate"></span >
+            </div></label>
+
+            <label>
+            <div class="circle">
+                <input type="radio" id="yearly" name="plan">Yearly<br><span id="yearlyPriceRate"></span>
+            </div>
+            </label>
+            <br><br> Select currency:
+            <select onchange="changeCurrency()" id="selectcurrency" name="currency">
+                <option value="INR" selected>INR</option>
+                <option value="USD">USD</option>
+                <option value="YEN">YEN</option>
+                </select>
+            <input type="button" value="Get Pass" onclick="getPass()">
+            <br><br>
+
+        </form>
+    </div>
+    <br>
+    <script src="jsfile.js"></script>
+</body>
+
+</html>
