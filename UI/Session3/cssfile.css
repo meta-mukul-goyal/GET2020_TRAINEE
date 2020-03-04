@@ -1,0 +1,21 @@
+.header_area {
+    background-image: url("homebg.png");
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.navbar a {
+    /* margin-top: 10px; */
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+/* .textcolorwhite {
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+} */
