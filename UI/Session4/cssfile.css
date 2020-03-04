@@ -1,0 +1,198 @@
+    body {
+        background-image: url("bodybg.png");
+        background-size: 100%;
+        background-repeat: repeat-y;
+    }
+    
+    .container {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("homebg.png");
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    
+    .navbar {
+        margin-top: 15px;
+    }
+    
+    .navbar i {
+        margin-left: 30px;
+    }
+    
+    .textcolor i {
+        color: rgb(42, 103, 201);
+    }
+    
+    .textcolorwhite {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #header_image {
+        height: 400px;
+        width: 400px;
+        margin-bottom: 80px;
+    }
+    
+    .margin_top {
+        margin-top: 70px;
+    }
+    
+    .margin_top1 {
+        margin-top: 40px;
+    }
+    
+    .textfont1 {
+        font-size: 40px;
+    }
+    
+    .width {
+        width: 78%;
+    }
+    
+    .width1 {
+        width: 60%;
+    }
+    
+    #leftbutton {
+        background-color: orangered;
+        height: 30px;
+        width: 80px;
+        border: none;
+    }
+    
+    #rightbutton {
+        margin-left: 4px;
+        background-color: #3c4cc2;
+        height: 30px;
+        width: 80px;
+        border: none;
+    }
+    
+    .container1 {
+        margin-top: 70px;
+        font-family: Arial;
+    }
+    
+    .textcenter {
+        text-align: center;
+    }
+    
+    #textcolor {
+        color: rgb(42, 103, 201);
+    }
+    
+    .marginleftright {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    #drag3left {
+        transform: skewy(175deg);
+        width: 20%;
+    }
+    
+    #drag3right {
+        transform: skewY(5deg);
+        width: 20%;
+    }
+    
+    #drag1left {
+        transform: skewy(175deg);
+        width: 15%;
+    }
+    
+    #drag1right {
+        transform: skewY(5deg);
+        width: 15%;
+    }
+    
+    .section_images {
+        width: 180px;
+        margin-right: 300px;
+        margin-left: 100px;
+    }
+    
+    .section_images1 {
+        width: 180px;
+        margin-right: 200px;
+    }
+    
+    .bold {
+        font-size: 18px;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    
+    .bold1 {
+        width: 40%;
+    }
+    
+    .opacity {
+        opacity: 0.5;
+        font-weight: bold;
+    }
+    
+    .backimage {
+        background-image: url("homebg.png");
+        background-size: 100%;
+        background-position: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #appdownloadimage {
+        width: 400px;
+    }
+    
+    .margin_left {
+        margin-left: 80px;
+    }
+    
+    .footerarea {
+        background-color: #3c3c4d;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .adjust {
+        margin: 20px 0px;
+    }
+    
+    .textcolor1 {
+        color: #2b2b33;
+        font-size: medium;
+    }
+    
+    .textcolor2 {
+        color: #63636e;
+    }
+    
+    .textcolor2 a {
+        color: #63636e;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    
+    .padding_bottom {
+        padding-bottom: 5px;
+    }
+    
+    #alignright {
+        float: right;
+    }
+    
+    #textfont {
+        font-size: 14px;
+        opacity: 0.7;
+    }
