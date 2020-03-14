@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cssfile.css">
+</head>
+
+<body>
+    <div class="operationMSG"></div>
+    <div onclick="showregisterform()" id="onclickregisterform" class="form">
+        <h1>Parking Registration Form</h1>
+    </div>
+    <!-- Employee registration form -->
+    <div>
+        <form id="registerformid" style="display: none" class="noneDisplay">
+
+            <h1>Parking Registration Form</h1>
+            <label id="1">Employee Name 
+            <input id="name" name="name" type="text" onkeydown="enterTrigger(this)" placeholder="Enter Employee Name" required>
+            </label>
+            <label id="2">Gender:
+            <input type="radio" name="gender" value="male" onkeydown="enterTrigger(this)">Male
+            <input type="radio" name="gender" value="female" onkeydown="enterTrigger(this)">Female
+            </label>
+            <label id="3">Employee Email
+            <input id="email" name="email" type="email" placeholder="Enter Employee email" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="4">Employee Password
+            <input id="password" name="password" type="password" placeholder="Enter Employee password" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="5">Confirm Password
+            <input id="confirmpassword" name="ConfirmPassword" type="password" placeholder="Enter Confirm Password" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="6">Employee Contact
+            <input id="contact" name="Contact" placeholder="Enter contact number" type="text" onkeydown="enterTrigger(this)">
+            </label>
+            <label id="7">
+            <input id="nextFrom_1" name="Vehicle_Details" type="button" value="Next Form" onclick="showvehicleform()">
+            </label>
+        </form>
+    </div>
+
+    <!-- Vehicle registration form -->
+    <div>
+        <form id="vehicleformid" style="display: none" class="noneDisplay">
+
+            <h1>Vehicle Form</h1>
+            <label id="8">Vehicle Company 
+            <input id="vehiclecompany" name="Vehicle_Company" type="text" placeholder="Enter Vehicle Company" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="9">Vehicle Model
+            <input id="vehiclemodel" name="Vehicle_Model" type="text" placeholder="Enter Vehicle Model" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="10">Vehicle Type
+            <select id=selectVehicleType name="Vehicle_Type" onkeydown="enterTrigger(this)">
+                <option>Select Vehicle Type</option>
+                <option value="Bicycle">Bicycle</option>
+                <option value="Motorcycle">Motor Cycle</option>
+                <option value="Fourwheelers">Four Wheeler</option>
+            </select>
+            </label>
+            <label id="11">Vehicle Number
+            <input id="tel" name="Vehicle_Number" type="tel" placeholder="Enter Vehicle Number" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="12">Employee Id
+            <input id="empId" name="Employee_Id" type="number" placeholder="Enter Employee Id" onkeydown="enterTrigger(this)" required>
+            </label>
+            <label id="13">Vehicle Description
+            <textarea id="textbox" name="Vehicle_Description" placeholder="Enter Description" onkeydown="enterTrigger(this)" required></textarea>
+            </label>
+            <label id="14">
+            <input id="nextForm_2" name="Plan_Details" type="button" value="Next Form" onclick="planform()">
+            </label>
+        </form>
+    </div>
+
+    <!-- Plan selection form -->
+    <div>
+        <form id="planid" style="display: none">
+            <h1>Select your Plan:</h1>
+            <div class="text">Bicycle </div>
+            <div class="text">MotorCycle</div>
+            <div class="text">Four Wheeler</div><br><br>
+            <label><div class="circle">
+                <input type="radio" id="daily" name="plan">Daily<br><span  id = "dailyPriceRate"></span>
+            </div></label>
+
+            <label><div class="circle">
+                <input type="radio" id="monthly" name="plan">Monthly<br><span id = "monthlyPriceRate"></span >
+            </div></label>
+
+            <label>
+            <div class="circle">
+                <input type="radio" id="yearly" name="plan">Yearly<br><span id="yearlyPriceRate"></span>
+            </div>
+            </label>
+            <br><br> Select currency:
+            <select onchange="changeCurrency()" id="selectcurrency" name="currency">
+                <option value="INR" selected>INR</option>
+                <option value="USD">USD</option>
+                <option value="YEN">YEN</option>
+                </select>
+            <input type="button" value="Get Pass" onclick="getPass()">
+            <br><br>
+
+        </form>
+    </div>
+    <br>
+    <script src="jsfile.js"></script>
+</body>
+
+</html>
