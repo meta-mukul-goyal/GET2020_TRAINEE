@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="cssfile.css"> -->
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#registerformid">Add Employee</a>
+        <a href="#vehicleformid">Add Vehicle</a>
+        <a href="#feedbackid">Give feedback</a>
+        <a href="#planid">Pricing</a>
+    </div>
+    <div>
+        <form id="registerformid">
+            <fieldset>
+
+                <h1>Parking Registration Form</h1>
+                <input id="name" type="text" placeholder="Name" required><br><br>
+                <strong>Gender: </strong><label><input type="radio" name="gender">Male</label> <label><input type="radio" name="gender">Female</label><br><br>
+                <input id="email" type="email" placeholder="email" required><br><br>
+                <input id="password" type="password" placeholder="password" required><br><br>
+                <input id="confirmpassword" type="password" placeholder="Confirm Password" required><br><br>
+                <input id="contact" placeholder="contact number" type="text"><br><br>
+                <input type="button" value="Submit" onclick="checkValidation()">
+            </fieldset>
+        </form>
+    </div>
+
+
+    <br>
+    <div>
+        <form id="vehicleformid">
+            <fieldset>
+
+                <h1>Vehicle Form</h1>
+                <input id="vehiclecompany" type="text" placeholder="Vehicle Company" required><br><br>
+                <input id="vehiclemodel" type="text" placeholder="Vehicle Model" required><br><br>
+                <select id=selectVehicleType>
+                <option>Select Vehicle Type</option>
+                <option value="Bicycle">Bicycle</option>
+                <option value="Motorcycle">Motor Cycle</option>
+                <option value="Fourwheelers">Four Wheeler</option>
+                </select>
+                <br><br>
+                <input type="tel" placeholder="Vehicle Number" required><br><br>
+                <input id="empId" type="number" placeholder="Employee Id" required><br><br>
+                <textarea placeholder="Description"></textarea><br><br>
+                <input type="button" value="Submit" onclick="vehicleData()">
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <form id="feedbackid">
+        <fieldset>
+
+            <h1>Fedback Form</h1>
+            <input id="name" type="text" placeholder="Name" required><br><br>
+            <input id="email" type="email" placeholder="email" required><br><br>
+            <input id="subject" type="text" placeholder="Subject" required><br><br>
+            <textarea placeholder="Message"></textarea><br><br>
+            <input type="button" value="Send Mail" onclick="">
+        </fieldset>
+    </form>
+    <br>
+    <div>
+        <form id="planid">
+            <fieldset>
+                <h1>Select your Plan:</h1><br>
+                <label><strong><input type="radio" id="daily" >Daily<span  id = "dailyPriceRate"></span></strong></label>
+                <label><strong><input type="radio" id="monthly">Monthly<span id = "monthlyPriceRate"></span ></strong></label>
+                <label><strong><input type="radio" id="yearly">Yearly<span id = "yearlyPriceRate"></span></strong></label>
+                <br><br><br>
+                <strong>Select currency: </strong>
+                <select onchange="changeCurrency()" id="selectcurrency">
+                <option value="INR" selected>INR</option>
+                <option value="USD">USD</option>
+                <option value="YEN">YEN</option>
+                </select>
+                <input type="button" value="Get Pass" onclick="getPass()">
+            </fieldset>
+        </form>
+    </div>
+    <br>
+    <script src="jsfile.js"></script>
+</body>
+
+</html>
