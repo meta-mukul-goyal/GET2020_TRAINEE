@@ -1,0 +1,11 @@
+div button {
+    margin-left: 20px;
+}
+
+#round1 {
+    border-radius: 2rem;
+}
+
+.thumbnail {
+    padding: 100px 50px;
+}
